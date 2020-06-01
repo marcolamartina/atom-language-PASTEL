@@ -1,0 +1,23 @@
+{
+  "author": {
+    "name": "Marco La Martina"
+  },
+  "bugs": {
+    "url": "https://github.com/marcolamartina/atom-language-PASTEL/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "PASTEL language support for Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/marcolamartina/atom-language-PASTEL",
+  "license": "MIT",
+  "name": "language-PASTEL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcolamartina/atom-language-PASTEL.git"
+  },
+  "version": "0.0.0"
+}

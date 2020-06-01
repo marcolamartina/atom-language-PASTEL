@@ -1,0 +1,137 @@
+'fileTypes': [
+  'pa',
+  'pastel',
+  'PASTEL'
+]
+'foldingStartMarker': '/\\*\\*|\\{\\s*$'
+'foldingStopMarker': '\\*\\*/|^\\s*\\}'
+'name': 'PASTEL'
+'patterns': [
+  {
+    'include': '#PASTEL'
+  }
+]
+'repository':
+  'comment':
+    'patterns': [
+      {
+        'begin': '/\\*'
+        'end': '\\*/'
+        'name': 'comment.block.PASTEL'
+      }
+      {
+        'begin': '//'
+        'end': '(?=\\n)'
+        'name': 'comment.line.doubleslash.PASTEL'
+      }
+    ]
+  'constant':
+    'patterns': [
+      {
+        'match': '\\b([0-9]+)\\b'
+        'name': 'constant.numeric.integer.PASTEL'
+      }
+      {
+        'match': '\\b([0-9]+\.[0-9]+)\\b'
+        'name': 'constant.numeric.real.PASTEL'
+      }
+
+    ]
+  'PASTEL':
+    'patterns': [
+      {
+        'include': '#constant'
+      }
+      {
+        'include': '#comment'
+      }
+      {
+        'include': '#string'
+      }
+      {
+        'include': '#keyword'
+      }
+      {
+        'include': '#variable'
+      }
+      {
+        'include': '#operators'
+      }
+      {
+        'include': '#device'
+      }
+      {
+        'include': '#function'
+      }
+
+
+    ]
+
+  'string':
+    'patterns': [
+      {
+        'begin': '\"'
+        'end': '\"'
+        'name': 'string.quoted.double.PASTEL'
+      }
+    ]
+  'device':
+    'patterns': [
+      {
+        'match': '\\b((([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\:[0-9]+)\\b'
+        'name': 'device.language.PASTEL'
+      }
+    ]
+  'variable':
+    'patterns': [
+      {
+        'match': '\\b(device|int|real|string)\\b'
+        'name': 'variable.language.PASTEL'
+      }
+    ]
+  'function':
+    'patterns': [
+      {
+        'match': '\\s*(print/(\(.*\)))\\s*'
+        'name': 'function.language.PASTEL'
+      }
+    ]
+  'keyword':
+    'patterns': [
+      {
+        'match': '\\b(debug[0-9]+)\\b'
+        'name': 'keyword.other.PASTEL'
+      }
+      {
+        'match': '\\b(if|else|while|for|in|def|print)\\b'
+        'name': 'keyword.control.PASTEL'
+      }
+        {
+          'match': '^\\s*((#)\\s*(include))\\b\\s*'
+          'name': 'keyword.inclusion.PASTEL'
+        }
+
+    ]
+
+  'operators':
+    'patterns': [
+      {
+        'match': '!=|<=|>=|==|<|>'
+        'name': 'operator.comparison.PASTEL'
+      }
+      {
+        'match': '\\b(and|or)\\b'
+        'name': 'operator.logical.PASTEL'
+      }
+      {
+        'match': '='
+        'name': 'operator.assignment.PASTEL'
+      }
+      {
+        'match': '%|\\*|/|-|\\+'
+        'name': 'operator.arithmetic.PASTEL'
+      }
+
+    ]
+
+'scopeName': 'source.PASTEL'
