@@ -126,7 +126,7 @@
         'name': 'keyword.arithmetic.PASTEL'
       }
       {
-        'match': ':|\.'
+        'match': ':|\\.'
         'name': 'keyword.address.PASTEL'
       }
     ]
