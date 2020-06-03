@@ -55,16 +55,11 @@
         'include': '#variable'
       }
       {
-        'include': '#operators'
-      }
-      {
         'include': '#device'
       }
       {
         'include': '#function'
       }
-
-
     ]
 
   'string':
@@ -85,14 +80,14 @@
   'variable':
     'patterns': [
       {
-        'match': '\\b(device|int|real|string)\\b'
+        'match': '\\b(device|int|real|string|list)\\b'
         'name': 'variable.language.PASTEL'
       }
     ]
   'function':
     'patterns': [
       {
-        'match': '\\s*(print/(\(.*\)))\\s*'
+        'match': '\\b(print)\\b'
         'name': 'function.language.PASTEL'
       }
     ]
@@ -107,11 +102,15 @@
         'name': 'keyword.control.PASTEL'
       }
       {
+        'match': '\\b(print|append|remove|connect|disconnect)\\b'
+        'name': 'keyword.function.PASTEL'
+      }
+      {
         'match': '^\\s*((#)\\s*(include))\\b\\s*'
         'name': 'keyword.inclusion.PASTEL'
       }
       {
-        'match': '\\b(!=|<=|>=|==|<|>)\\b'
+        'match': '!=|<=|>=|==|<|>'
         'name': 'keyword.comparison.PASTEL'
       }
       {
@@ -125,6 +124,10 @@
       {
         'match': '%|\\*|/|-|\\+'
         'name': 'keyword.arithmetic.PASTEL'
+      }
+      {
+        'match': ':|\.'
+        'name': 'keyword.address.PASTEL'
       }
     ]
 
