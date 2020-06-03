@@ -80,7 +80,7 @@
   'variable':
     'patterns': [
       {
-        'match': '\\b(device|int|real|string|list)\\b'
+        'match': '\\b(device|int|real|string|list|address)\\b'
         'name': 'variable.language.PASTEL'
       }
     ]
