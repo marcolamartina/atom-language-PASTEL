@@ -103,35 +103,30 @@
         'name': 'keyword.other.PASTEL'
       }
       {
-        'match': '\\b(if|else|while|for|in|def|print)\\b'
+        'match': '\\b(if|else|while|for|in|def)\\b'
         'name': 'keyword.control.PASTEL'
       }
-        {
-          'match': '^\\s*((#)\\s*(include))\\b\\s*'
-          'name': 'keyword.inclusion.PASTEL'
-        }
-
-    ]
-
-  'operators':
-    'patterns': [
       {
-        'match': '!=|<=|>=|==|<|>'
-        'name': 'operator.comparison.PASTEL'
+        'match': '^\\s*((#)\\s*(include))\\b\\s*'
+        'name': 'keyword.inclusion.PASTEL'
+      }
+      {
+        'match': '\\b(!=|<=|>=|==|<|>)\\b'
+        'name': 'keyword.comparison.PASTEL'
       }
       {
         'match': '\\b(and|or)\\b'
-        'name': 'operator.logical.PASTEL'
+        'name': 'keyword.logical.PASTEL'
       }
       {
         'match': '='
-        'name': 'operator.assignment.PASTEL'
+        'name': 'keyword.assignment.PASTEL'
       }
       {
         'match': '%|\\*|/|-|\\+'
-        'name': 'operator.arithmetic.PASTEL'
+        'name': 'keyword.arithmetic.PASTEL'
       }
-
     ]
+
 
 'scopeName': 'source.PASTEL'
