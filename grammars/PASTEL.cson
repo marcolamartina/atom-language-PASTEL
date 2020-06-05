@@ -102,7 +102,7 @@
         'name': 'keyword.control.PASTEL'
       }
       {
-        'match': '\\b(print|append|remove|connect|disconnect)\\b'
+        'match': '\\b(print|append|remove|connect|disconnect|insert|remove|length|\.port|\.address)\\b'
         'name': 'keyword.function.PASTEL'
       }
       {
