@@ -105,8 +105,12 @@
         'name': 'keyword.control.PASTEL'
       }
       {
-        'match': '\\b(print|append|remove|connect|disconnect|insert|remove|length|\.port|\.address|s2d|s2r|s2i|s2a|toString|quit|load|console|split|strip|send|receive|typeof|isConnected|sleep)\\b'
+        'match': '\\b(print|append|remove|connect|disconnect|insert|remove|length|\.port|\.address|s2d|s2r|s2i|s2a|toString|quit|console|split|strip|send|receive|typeof|isConnected|sleep)\\b'
         'name': 'keyword.function.PASTEL'
+      }
+      {
+        'match': '^\\s*((#)\\s*(include))\\b\\s*'
+        'name': 'keyword.inclusion.PASTEL'
       }
       {
         'match': '!=|<=|>=|==|<|>'
